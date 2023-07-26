@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shape_with_image_padding.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Outer layer: The main shape with stroke -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Define your shape properties here -->
+            <stroke
+                android:width="10dp"
+                android:color="@color/black">
+            </stroke>
+        </shape>
+    </item>
+
+    <!-- Inner layer: The TV image with padding -->
+    <item
+        android:left="100dp"
+        android:right="100dp"
+        android:top="30dp"
+        android:bottom="30dp">
+
+        <!-- The TV image -->
+        <bitmap
+            android:src="@drawable/tv_monitor"
+            android:gravity="center" />
+
+    </item>
+
+</layer-list>
