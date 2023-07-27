@@ -3,7 +3,6 @@ package com.example.medicbotconnect;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -29,10 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.tvButton) {
-            Intent intent = new Intent(MainActivity.this, tvPairActivity.class);
+            Intent intent = new Intent(MainActivity.this, TVPairActivity.class);
             startActivity(intent);
         } else if (v.getId() == R.id.cpButton) {
-            Intent intent = new Intent(MainActivity.this, loginActivity.class);
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }

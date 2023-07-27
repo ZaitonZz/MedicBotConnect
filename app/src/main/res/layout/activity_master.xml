@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".MasterActivity">
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="End Patient Session Prematurely"
+        android:textSize="15sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pauseButton"
+        app:layout_constraintTop_toTopOf="@+id/pauseButton" />
+
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="Report Issue"
+        android:textSize="16sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/musicButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/musicButton"
+        app:layout_constraintTop_toTopOf="@+id/musicButton" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="Save and Restart for New Patient"
+        android:textSize="16sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/overrideButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="Pause Music"
+        android:textSize="16sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/reportButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pauseButton" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="Pause AI"
+        android:textSize="16sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/endButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
+
+    <Button
+        android:id="@+id/overrideButton"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:backgroundTint="#C52828"
+        android:fontFamily="@font/inter_medium"
+        android:text="Override AI and Call Doctor"
+        android:textSize="16sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toTopOf="@+id/saveButton" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/backButton2"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

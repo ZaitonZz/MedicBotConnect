@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
     android:launchMode="singleTask"
-    tools:context=".loginActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/textView4"

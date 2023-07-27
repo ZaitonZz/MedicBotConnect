@@ -13,15 +13,18 @@
         android:theme="@style/Theme.MedicBotConnect"
         tools:targetApi="31">
         <activity
-            android:name=".cpPairActivity"
+            android:name=".MasterActivity"
             android:exported="false" />
         <activity
-            android:name=".loginActivity"
+            android:name=".CPPairActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.MedicBotConnect" />
         <activity
-            android:name=".tvPairActivity"
+            android:name=".TVPairActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
