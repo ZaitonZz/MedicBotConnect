@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MasterActivity extends AppCompatActivity implements View.OnClickListener {
+public class ActivityMaster extends AppCompatActivity implements View.OnClickListener {
     private boolean isRunningAI, isRunningMusic;
     private Button saveButton, overrideButton, pauseButton, endButton, musicButton, reportButton;
     private ImageButton backButton;
@@ -115,7 +115,7 @@ public class MasterActivity extends AppCompatActivity implements View.OnClickLis
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(MasterActivity.this, message, duration).show();
+                Toast.makeText(ActivityMaster.this, message, duration).show();
             }
         }, delayMillis);
     }

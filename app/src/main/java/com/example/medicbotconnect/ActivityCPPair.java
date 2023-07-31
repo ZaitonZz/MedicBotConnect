@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class CPPairActivity extends AppCompatActivity {
+public class ActivityCPPair extends AppCompatActivity {
     private int first3digits, second3digits, third3digits;
     private ImageButton backButton;
     private TextView code;
@@ -116,7 +116,7 @@ public class CPPairActivity extends AppCompatActivity {
     // Method to navigate to the next activity
     private void goToNextActivity() {
         // Replace NextActivity with the desired activity class
-        Intent intent = new Intent(CPPairActivity.this, MasterActivity.class);
+        Intent intent = new Intent(ActivityCPPair.this, ActivityMaster.class);
         startActivity(intent);
         finish(); // Optional, to close this activity if needed
     }

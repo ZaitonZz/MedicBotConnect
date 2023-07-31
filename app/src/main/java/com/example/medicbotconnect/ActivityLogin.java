@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+public class ActivityLogin extends AppCompatActivity {
     private EditText textFieldEmail, textFieldPassword;
     private Button loginButton;
     private String inputEmail, validEmail, inputPass, validPass;
@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(inputEmail.equals(validEmail)){
                     if (inputPass.equals(validPass)){
-                        Intent intent = new Intent(LoginActivity.this, CPPairActivity.class);
+                        Intent intent = new Intent(ActivityLogin.this, ActivityCPPair.class);
                         startActivity(intent);
                     }else {
                         errorMessage.setVisibility(View.VISIBLE);

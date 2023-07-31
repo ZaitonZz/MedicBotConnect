@@ -9,7 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class ActivityMain extends AppCompatActivity implements View.OnClickListener {
     private ImageButton tvButton, cpButton;
 
     @Override
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.tvButton) {
-            Intent intent = new Intent(MainActivity.this, TVPairActivity.class);
+            Intent intent = new Intent(ActivityMain.this, ActivityTVPair.class);
             startActivity(intent);
         } else if (v.getId() == R.id.cpButton) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(ActivityMain.this, ActivityLogin.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }

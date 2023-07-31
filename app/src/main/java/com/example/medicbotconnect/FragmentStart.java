@@ -11,11 +11,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class StartFragment extends Fragment {
+public class FragmentStart extends Fragment {
 
-    public StartFragment() {
+    public FragmentStart() {
         // Required empty public constructor
     }
 
@@ -34,6 +33,15 @@ public class StartFragment extends Fragment {
         // Apply the animation to the view
         startButton.startAnimation(fadeInAnimation_slow);
         logo.startAnimation(fadeInAnimation_fast);
+
+        CustomViewPager viewPager = requireActivity().findViewById(R.id.viewPager);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPager.setCurrentItem(1);
+            }
+        });
+
         return rootView;
     }
 }

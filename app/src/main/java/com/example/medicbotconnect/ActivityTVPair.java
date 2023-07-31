@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class TVPairActivity extends AppCompatActivity {
+public class ActivityTVPair extends AppCompatActivity {
     private EditText pairNum;
     private String pass;
     private Button submitButton;
@@ -39,7 +39,7 @@ public class TVPairActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (pass.equals(pairNum.getText().toString())){
                     errorMessage.setVisibility(View.INVISIBLE);
-                    Intent intent = new Intent(TVPairActivity.this, PresentationActivity.class);
+                    Intent intent = new Intent(ActivityTVPair.this, ActivityPresentation.class);
                     startActivity(intent);
                 } else {
                     errorMessage.setVisibility(View.VISIBLE);

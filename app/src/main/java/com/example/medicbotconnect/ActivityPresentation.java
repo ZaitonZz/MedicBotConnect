@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class PresentationActivity extends AppCompatActivity {
+public class ActivityPresentation extends AppCompatActivity {
 
     CustomViewPager viewPager;
 
