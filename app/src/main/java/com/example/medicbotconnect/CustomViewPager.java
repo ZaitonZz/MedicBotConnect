@@ -14,11 +14,13 @@ public class CustomViewPager extends ViewPager {
     public CustomViewPager(@NonNull Context context) {
         super(context);
         swipeEnabled = true; // Enable swiping by default
+        setOffscreenPageLimit(0);
     }
 
     public CustomViewPager(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        swipeEnabled = true; // Enable swiping by default
+        swipeEnabled = true;
+        setOffscreenPageLimit(0);// Enable swiping by default
     }
 
     @Override

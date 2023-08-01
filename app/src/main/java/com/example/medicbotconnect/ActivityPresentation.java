@@ -30,5 +30,6 @@ public class ActivityPresentation extends AppCompatActivity {
         PresentationPagerAdapter pagerAdapter = new PresentationPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         viewPager.setSwipeEnabled(false);
+        viewPager.setOffscreenPageLimit(0);
     }
 }

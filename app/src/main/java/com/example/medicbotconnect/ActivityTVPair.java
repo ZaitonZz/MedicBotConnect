@@ -28,6 +28,10 @@ public class ActivityTVPair extends AppCompatActivity {
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        View decorView = getWindow().getDecorView();
+        int flags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        decorView.setSystemUiVisibility(flags);
         pairNum = findViewById(R.id.pairingNumberField);
         submitButton = findViewById(R.id.submitPairingButton);
         exitButton = findViewById(R.id.backButton);

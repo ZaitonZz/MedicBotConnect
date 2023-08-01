@@ -9,4 +9,62 @@
     tools:context=".FragmentInterview">
 
 
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="614dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/inter_medium"
+        android:text="  2. How often do you cough blood in a day?"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/vis3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="164dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <com.example.medicbotconnect.TypewriterEffect
+        android:id="@+id/interviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        app:fontFamily="@font/inter_extrabold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="614dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/inter_medium"
+        android:text="  1. When you cough do you feel any back aches or numbing of fingers?"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/question2"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
